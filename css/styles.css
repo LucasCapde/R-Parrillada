@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Nunito:wght@300;400;700&family=Pacifico&display=swap');
+
+/* *----------Estilos generales---------- */
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f1f8ff;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 125px;
+}
+
+
+/* !------------------------- HEADER -------------------------*/
+
+/* *Ajustes menú responsive */
+.container-nav label,
+.container-nav input{
+  display: none;
+}
+
+
+/* *---------- nav ---------- */
+
+.nav-bar{
+  background: #141414;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.container-nav,
+.nav-bar-lista{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.nav-bar h1 a{
+  color: #fea116;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.nav-bar-lista{
+  list-style: none;
+}
+
+.nav-bar-lista a{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 21px;
+}
+
+.nav-bar-lista a:hover{
+  color: #fea116;
+  transition: color .5s ease-out;
+}
+
+.banner{
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, .75) , rgba(0, 0, 0, .75) ), url(../img/bg-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h2{ 
+  font-size: 5em;
+}
+
+.banner p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 22px;
+  width: 70%;
+}
+
+/* !------------------------- MAIN -------------------------*/
+/* *---------- Sección tarjetas ---------- */
+
+.seccion-tarjetas{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+
+.tarjeta{
+  width: 23%;
+  height: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: white;
+  gap: 18px;
+  box-shadow: -5px -5px 20px 0px rgba(0,0,0,0.3);
+}
+
+.tarjeta i{
+  color: #fea116;
+}
+
+.tarjeta h3{
+  font-size: 26px;
+}
+
+.tarjeta p{
+  font-family: 'Heebo', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* *---------- Sección nosotros ---------- */
+
+.seccion-nosotros{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  padding: 0 35px;
+  height: 800px;
+}
+
+.img-nosotros{
+  width: 40%;
+  position: relative;
+  margin-left: 20px;
+}
+
+.img-nosotros img{
+  position: absolute;
+}
+
+.img-about-1{
+  width: 50%;
+}
+
+.img-about-2{
+  width: 260px;
+  right: 45px;
+  top: 87px;
+}
+
+.img-about-3{
+  width: 260px;
+  left: 87px;
+  bottom: 185px;
+}
+
+.img-about-4{
+  width: 50%;
+  bottom: 98px;
+  right: -41px;
+}
+
+.nosotros{
+  width: 45%;
+}
+
+.nosotros h3{
+  font-family: 'Pacifico', cursive;
+  color: #fea116;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.nosotros i{
+  color: #fea116;
+}
+
+.nosotros h4{
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.nosotros p{
+  font-weight: 300;
+  font-size: 22px;
+}
+
+
+/* *---------- Sección menú ---------- */
+
+.seccion-menu h3{
+  font-family: 'Pacifico', cursive;
+  color: #fea116;
+  font-size: 25px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.seccion-menu h4{
+  font-size: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.menu-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+.menu-item img{
+  width: 30%;
+  margin: 0 30px;
+}
+
+.menu-detalles{
+  width: 100%;
+}
+
+.menu-detalles p{
+  font-weight: 300;
+  font-size: 22px;
+  padding-top: 5px;
+  border-top: 2px solid hsl(0, 0%, 70%);
+}
+
+.menu-precio{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-precio h5{
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.menu-precio p{
+  font-weight: 700;
+  color: #fea116;
+  border: none;
+}
+
+
+/* *---------- Sección formulario ---------- */
+
+
+.seccion-contacto{
+  display: flex;
+  margin-top: 50px;
+}
+
+.seccion-contacto img{
+  width: 50%;
+}
+
+.contacto{
+  width: 50%;
+  background: #0f172b;
+  color: white;
+  padding: 25px 40px;
+}
+
+.contacto h3{
+  color: #fea116;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.contacto h4{
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.contenedor-contacto{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.nombre,
+.mail{
+  width: 50%;
+}
+
+.contacto label{
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.contacto input{
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 21px;
+  text-indent: 10px;
+}
+
+.contacto textarea{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  text-indent: 10px;
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+:placeholder-shown{
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+}
+
+.contacto textarea:placeholder-shown{
+  padding-top: 10px;
+}
+
+.contacto button{
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  background-color: #fea116;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contacto button:active{
+  background-color: hsl(36, 99%, 45%);
+  transform: scale(0.998);
+}
+
+
+/* *---------- Sección equipo ---------- */
+
+.seccion-equipo{
+  margin-top: 50px;
+}
+
+.seccion-equipo h3{
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #fea116;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.seccion-equipo h4{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.contenedor-equipo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  padding: 0 50px;
+}
+
+.tarjeta-chef{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.tarjeta-chef:hover{
+  box-shadow: 0px -5px 20px 5px rgba(0,0,0,0.1);
+  transform: scale(1.01);
+  transition: all .4s ease-in-out;
+}
+
+.tarjeta-chef img{
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.tarjeta-chef p{
+  font-weight: 700;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+/* !------------------------- FOOTER -------------------------*/
+
+footer{
+  background: #0f172b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 25px 50px;
+}
+
+
+
+footer h3{
+  font-family: 'Pacifico', cursive;
+  color: #fea116;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+}
+
+footer a,
+footer p{
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.container-footer{
+  width: 23%;
+}
+
+.redes i{
+  color: white;
+  margin-right: 10px;
+}
+
+.redes i:hover{
+  color: #fea116;
+  transition: color .5s ease-out;
+}
+
+
+
+
+
+/* !--------------- MEDIA QUERIES --------------- */
+/* *---------- Dispositivos md o tablets ---------- */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  body{
+    padding-top: 114px;
+  }
+
+
+  /* !------------------------- HEADER -------------------------*/
+  /* *---------- nav ---------- */
+  
+  .container-nav{
+    display: block;
+    padding: 30px;
+  }
+
+  .nav-bar h1{
+    font-size: 40px;
+  }
+
+  /* *AQUÍ EMPIEZA EL BURGER MENU */
+
+  /* Mostrar burger */
+  
+  .container-nav label{
+    display: inline-block;
+    color: white;
+    font-size: 50px;
+    color: #fea116;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  
+  /* Ocultar barra de navegación */
+
+  .nav-bar-lista{
+    display: none;
+  }
+
+  /* Mostrar ocultos al presionar el icono */
+  .container-nav input:checked ~ .nav-bar-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    height: 100%;
+    transition: display 5s ease-in-out ;
+  }
+
+  /* *AQUÍ TERMINA EL BURGER MENU */
+
+
+  .nav-bar-lista li{
+    margin-bottom: 20px;
+  }
+  
+  .banner{
+    justify-content: flex-start;
+    height: 87vh;
+  }
+  
+  .banner h2{
+    font-size: 50px;
+    margin: 40px 0;
+  }
+  
+  .banner p{
+    width: 95%;
+
+    font-size: 24px;
+  }
+  
+  .banner br{
+    display: block;
+  }
+
+
+
+  /* !------------------------- MAIN -------------------------*/
+  /* *---------- Sección tarjetas ---------- */
+
+  main{
+    padding: 0 30px;
+  }
+  
+  .seccion-tarjetas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .tarjeta{
+    width: 48%;
+    justify-content: flex-start;
+    align-items: start;
+    height: 38rem;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+
+
+  /* *---------- Sección nosotros ---------- */
+
+  .seccion-nosotros{
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    height: max-content;
+  }
+
+  .img-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+  }
+
+  .img-nosotros img{
+    position: static;
+    width: 75%;
+    margin-bottom: 15px;
+  }
+
+  .nosotros{
+    width: 50%;
+  }
+
+
+
+  /* *---------- Sección menú ---------- */
+
+  .seccion-menu{
+    margin-top: 15px;
+  }
+
+  .menu-item{
+    width: 45%;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    width: 47%;
+    margin-left: 0;
+}
+
+  .menu-detalles{
+    width: 60%;
+  }
+
+  /* *---------- Sección formulario ---------- */
+
+  /* Borro la imagen usada en desktop ya que no le encuentro un lugar adecuado */
+
+  .seccion-contacto{
+    display: block;
+  }
+
+  .seccion-contacto img{
+    display: none;
+  }
+
+  .contacto{
+    width: 100%;
+  }
+
+  .contenedor-contacto{
+    gap: 25px;
+  }
+
+  form label{
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    margin-bottom: 10px;
+  }
+
+  /* *---------- Sección equipo ---------- */
+
+  .seccion-equipo {
+    margin-top: 30px;
+  }
+
+  .contenedor-equipo{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .tarjeta-chef{
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+
+
+  /* !------------------------- FOOTER -------------------------*/
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+  .container-footer{
+    width: 40%;
+    margin-bottom: 15px;
+  }
+
+  .container-footer a{
+    display: block;
+  }
+
+  .redes{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+
+}
+/* *---------- Dispositivos sm o celulares ---------- */
+
+
+
+@media screen and (max-width: 767px){
+
+  body{
+    padding-top: 90px;
+  }
+
+  /* !------------------------- HEADER -------------------------*/
+  /* *---------- nav ---------- */
+
+  header{
+    width: 100%;
+  }
+  
+  .container-nav{
+    display: block;
+    padding: 20px 20px 20px 10px;
+  }
+
+  .nav-bar h1{
+    font-size: 40px;
+    width: 90%;
+  }
+
+  /* *AQUÍ EMPIEZA EL BURGER MENU */
+
+  /* Mostrar burger */
+  
+  .container-nav label{
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    color: #fea116;
+    position: absolute;
+    top: 27px;
+    right: 15px;
+  }
+  
+  
+  /* Ocultar barra de navegación */
+
+  .nav-bar-lista{
+    display: none;
+  }
+
+  /* Mostrar ocultos al presionar el icono */
+  .container-nav input:checked ~ .nav-bar-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    height: 100%;
+    transition: display 5s ease-in-out ;
+  }
+
+  /* *AQUÍ TERMINA EL BURGER MENU */
+
+
+  .nav-bar-lista li{
+    margin-bottom: 20px;
+  }
+  
+  .banner{
+    justify-content: flex-start;
+    height: 90vh;
+  }
+  
+  .banner h2{
+    font-size: 40px;
+    margin: 30px 0;
+  }
+  
+  .banner p{
+    width: 97%;
+  }
+  
+  .banner br{
+    display: none;
+  }
+
+
+  
+  /* !------------------------- MAIN -------------------------*/
+  /* *---------- Sección tarjetas ---------- */
+
+  main{
+    padding: 0 15px;
+  }
+  
+  .seccion-tarjetas{
+    display: block;
+    margin: 25px 0;
+    padding: 0;
+  }
+
+  .tarjeta{
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: -5px -5px 10px 0px rgba(0,0,0,0.3);
+  }
+
+
+
+  /* *---------- Sección nosotros ---------- */
+
+  .seccion-nosotros{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .img-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .img-nosotros img{
+    position: static;
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .nosotros{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nosotros h3,
+  .nosotros h4{
+    text-align: center;
+  }
+
+
+
+  /* *---------- Sección menú ---------- */
+
+  .seccion-menu{
+    margin-top: 15px;
+  }
+
+  .menu-item{
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .menu-item img{
+    width: 60%;
+    margin-left: 0;
+  }
+
+  .menu-detalles{
+    width: 70%;
+  }
+
+  .menu-detalles p{
+    font-size: 21px;
+  }
+
+
+
+  /* *---------- Sección formulario ---------- */
+
+  form label{
+    margin: 10px 0;
+  }
+
+  .seccion-contacto{
+    display: block;
+  }
+
+  .seccion-contacto img{
+    display: none;
+  }
+
+  .contacto{
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  .contacto h3,
+  .contacto h4{
+    text-align: center;
+  }
+
+  .contacto h4{
+    font-size: 24px;
+  }
+
+  .contenedor-contacto{
+    display: block;
+  }
+
+  .nombre,
+  .mail{
+    width: 100%;
+  }
+
+  textarea{
+    margin-bottom: 15px;
+  }
+
+
+
+  /* *---------- Sección equipo ---------- */
+
+  .contenedor-equipo{
+    display: block;
+  }
+
+  .tarjeta-chef{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 300px;
+  }
+
+
+
+  /* !------------------------- FOOTER -------------------------*/
+
+  footer,
+  .container-footer a{
+    display: block;
+  }
+
+  footer p,
+  footer a{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .container-footer{
+    width: 100%;
+  }
+
+  .container-footer h3{
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .horarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .redes{
+    display: flex;
+    justify-content: space-between;
+  }
+}

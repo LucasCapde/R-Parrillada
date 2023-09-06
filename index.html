@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucas Capdevila" />
+    <meta name="description" content="Proyecto R-Parrillada" />
+    <meta name="keywords" content="html, css, flexbox, position" />
+
+    <script
+      src="https://kit.fontawesome.com/c7393ce70b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>R - Parrillada</title>
+  </head>
+  <body>
+
+    <!-- El header contendrá la barra de navegación y el banner. -->
+
+    <header>
+      <nav class="nav-bar">
+        <div class="container-nav">
+          <h1><a href="#"><i class="fa-solid fa-utensils"></i> R-Parrillada</a></h1>
+          <!-- Label e input usados para crear el menú "hamburguesa" para el responsive pero no se mostrará en desktop. -->
+          <input type="checkbox" id="burger">
+          <label for="burger">&#9776;</label>
+          
+          <ul class="nav-bar-lista">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <h2>Disfruta nuestros deliciosos <br />
+            platos</h2>
+        <p>¡Descubre una experiencia culinaria inigualable en nuestra parrillada
+          excepcional! En cada bocado, transportamos tus sentidos a las vastas
+          llanuras de Argentina, donde el arte de la parrilla es una tradición
+          arraigada. Nuestro equipo apasionado de parrilleros maestros se
+          esfuerza por ofrecerte el aútentico sabor de la carne asada a la
+          parrilla, cuidadosamente sazonada y cocida a la perfección en brasas
+          ardientes.</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Tarjetas en las que contamos algunas de las mejores cualidades del restaurante. -->
+      <section class="seccion-tarjetas" id="servicios">
+        <article class="tarjeta">
+          <i class="fa-solid fa-user-tie fa-4x"></i>
+          <h3>Master Chefs</h3>
+          <p>Nuestros apasionados chefs, expertos en el arte de la parrilla, dan
+            vida a cada corte de carne con maestría y creatividad, creando una
+            experiencia culinaria única y llena de sabor en cada plato que
+            servimos.</p>
+        </article>
+        
+        <article class="tarjeta">
+          <i class="fa-solid fa-utensils fa-4x"></i>
+          <h3>Comida de calidad</h3>
+          <p>En nuestra parrilada, la calidad de la comida es nuestro sello
+            distintivo. Seleccionamos cuidadosamente los ingredientes más
+            frescos y los cortes de carne más jugosos para garantizar que cada
+            bocado sea una explosión de auténtico placer gastronómico.</p>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa-solid fa-cart-plus fa-4x"></i>
+          <h3>Ordena en línea</h3>
+          <p>Explora nuestra deliciosa oferta desde la comodidad de tu hogar.
+            Nuestra plataforma de orden en línea te permite seleccionar tus
+            platos favoritos y personalizar cada detalle de tu pedido para
+            disfrutar de la experiencia de nuestra parrilada en cualquier lugar
+            que te encuentres.</p>
+        </article>
+
+        <article class="tarjeta">
+          <i class="fa-solid fa-users fa-4x"></i>
+          <h3>Atención al cliente</h3>
+          <p>La satisfacción de nuestros clientes es nuestra máxima prioridad.
+            Nuestro equipo está comprometido en brindarte un servicio
+            excepcional y amable de cada visita. Desde el momento en que entras
+            hasta el último bocado, te aseguramos una atención al cliente de
+            primer nivel que complementa a la perfección nuestra deliciosa
+            comida y ambiente acogedor.</p>
+        </article>
+      </section>
+
+      <!-- Contamos al cliente un poco sobre nosotros y mostramos algunas imágenes del local y la comida. -->
+      <section class="seccion-nosotros" id="nosotros">
+        <div class="img-nosotros">
+          <img class="img-about-1" src="img/about-1.jpg" alt="Nuestro local" />
+          <img class="img-about-2" src="img/about-2.jpg" alt="Nuestro local" />
+          <img class="img-about-3" src="img/about-3.jpg" alt="Plato de verduras" />
+          <img class="img-about-4" src="img/about-4.jpg" alt="Porción para 2 personas" />
+        </div>
+
+        <article class="nosotros">
+          <h3>- Nosotros -</h3>
+          <h4>Bienvenidos a <i class="fa-solid fa-utensils"></i> R-Parrillada</h4>
+          <p>En nuestra parrilada, el aroma irresistible del humo y la carne
+            cocinándose se mezclan en una danza seductora que despierta tu
+            apetito. Cada corte de carne es seleccionado con esmero, asegurando
+            la frescura y la calidad que mereces. Desde los cortes más tiernos y
+            jugosos hasta los sabores audaces y ahumados de las costillas, te
+            garantizamos un viaje sensorial que te dejará ansiando cada
+            siguiente visita.<br />
+            Ya sea que te encuentres celebrando un momento especial o
+            simplemente deseando un festín inolvidable, nuestra parrillada es el
+            lugar perfecto para compartir con los tuyos. Acompaña tus platos
+            principales con una selección de guarniciones y salsas artesanales,
+            todo preparado para complementar y realzar la experiencia. Ven y
+            únete a nosotros en un banquete donde el fuego, el sabor y la
+            hospitalidad se unen para crear recuerdos duraderos. ¡Te esperamos
+            en nuestra parrilada para compartir contigo un festín que deleitará
+            tus sentidos y te hará volver por más!</p>
+        </article>
+      </section>
+
+      <!-- Listado de algunos platos con su respectiva foto, descripción y precios. -->
+      <section class="seccion-menu" id="menu">
+        <h3>- Nuestro menú -</h3>
+        <h4>Nuestros platos populares</h4>
+
+        <article class="menu">          
+          <div class="menu-item">
+            <img src="img/menu-1.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-2.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-3.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-4.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>    
+          
+          <div class="menu-item">
+            <img src="img/menu-5.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-6.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-7.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-8.jpg" alt="Plato de comida" />
+            <div class="menu-detalles">
+              <div class="menu-precio">
+                <h5>Chicken Burger</h5>
+                <p>$115</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>          
+        </article>
+      </section>
+
+      <!-- Formulario que se podrá llenar para hacer una consulta en línea. -->
+      <section class="seccion-contacto" id="contacto">
+        <img src="img/contacto.jpg" alt="Dos personas cenando">
+        <div class="contacto">
+          <h3>- Consulta -</h3>
+          <h4>Completá el formulario</h4>
+          <form action="" method="get">
+            <div class="contenedor-contacto">
+              <div class="nombre">
+                <label for="nombre">Nombre y apellido:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+              </div>
+  
+              <div class="mail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="usuario@usuario.com">
+              </div>
+            </div>
+            
+
+            <label for="consulta">Consulta:</label>
+            <textarea name="consulta" id="consulta" placeholder="Ingrese su consulta aquí"></textarea>
+
+            <button type="button">Enviar consulta</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Cards donde se presenta parte del equipo que integra R-Parrillada -->
+      <section class="seccion-equipo" >
+        <h3>- Nuestro equipo -</h3>
+        <h4>Conocé a nuestros chef</h4>
+        <div class="contenedor-equipo">
+          <div class="tarjeta-chef">
+            <img src="img/team-1.jpg" alt="Chef Lionel">
+            <p>Lionel Scaloni</p>
+          </div>
+          <div class="tarjeta-chef">
+            <img src="img/team-2.jpg" alt="Chef Walter">
+            <p>Walter Samuel</p>
+          </div>
+          <div class="tarjeta-chef">
+            <img src="img/team-3.jpg" alt="Chef Pablo">
+            <p>Pablo Aimar</p>
+          </div>
+          <div class="tarjeta-chef">
+            <img src="img/team-4.jpg" alt="Chef Roberto">
+            <p>Roberto Fabián Ayala</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página donde el usuario encontrará info, formas de contactarse, horarios de atención y redes sociales. -->
+    <footer>
+      <div class="container-footer">
+        <h3>Información</h3>
+        <p>
+          <a href="#">Reservas</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </p>        
+      </div>
+
+      <div class="container-footer">
+        <h3>Contacto</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Gral. Paz 576, San Miguel de Tucumán</p>
+        <p><i class="fa-solid fa-phone-flip"></i> 0381339900</p>
+        <p><i class="fa-regular fa-envelope"></i> info@r-parrillada.com</p>
+      </div>
+
+      <div class="container-footer">
+        <h3>Horarios</h3>
+        <div class="horarios">
+          <p>Lunes a sabados</p>
+          <p>09AM - 12PM</p>
+          <p>Domingos</p>
+          <p>10AM - 10PM</p>
+        </div>
+        
+      </div>
+
+      <div class="container-footer">
+        <h3>Nuestras redes</h3>
+        <div class="redes">
+          <i class="fa-brands fa-instagram fa-3x"></i>
+          <i class="fa-brands fa-x-twitter fa-3x"></i>
+          <i class="fa-brands fa-facebook-f fa-3x"></i>
+        </div>
+        
+      </div>
+
+    </footer>
+  </body>
+</html>
